@@ -16,7 +16,6 @@
 
 .page-home .navbar{
     position: fixed;
-    max-height: 10vh;
 }
 
 #main-navbar ul li{
@@ -30,5 +29,17 @@
 
 #main-navbar ul li a:hover{
     color: var(--red);
+}
+
+@media (max-width: 991px) {
+    .page-home .navbar{
+        position: fixed !important;
+    }
+
+    #main-navbar ul li{
+        float: none;
+        margin: 0;
+    }
+    
 }
 
