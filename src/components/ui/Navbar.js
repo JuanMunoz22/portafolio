@@ -1,6 +1,9 @@
 import React from 'react'
 
 import { NavLink } from 'react-router-dom';
+import { Anchor} from 'antd';
+
+const {Link} = Anchor;
 
 export const Navbar = () => {
 
@@ -28,56 +31,52 @@ export const Navbar = () => {
             </button>
             <div className='collapse navbar-collapse' id="main-navbar">
               <ul className='navbar-nav ml-auto'>
-                <li className='nav-item active'>
-                  <NavLink
-                    to='#home'
-                    className='nav-link'
-                    data-animate='scrolling'
-                  >
-                    Inicio
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink
-                    to='#about'
-                    className='nav-link'
-                    data-animate='scrolling'
-                  >
-                    Sobre Mi
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink
-                    to='#proyectos'
-                    className='nav-link'
-                    data-animate='scrolling'
-                  >
-                    Proyectos
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink
-                    to='#tecnologias'
-                    className='nav-link'
-                    data-animate='scrolling'
-                  >
-                    Tecnologias
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
-                  <NavLink
-                    to='#contacto'
-                    className='nav-link'
-                    data-animate='scrolling'
-                  >
-                    Contacto
-                  </NavLink>
-                </li>
-              </ul>
-              <ul className='nav ml-auto'>
-                <li className='nav-item'>
-                  <button className='btn btn-fab btn-theme no-shadow'>Es</button>
-                </li>
+                <Anchor>
+                  <li className='nav-item active'>
+                        <Link 
+                          href='#home' 
+                          title='Inicio'
+                          className='nav-link' 
+                          data-animate='scrolling'
+                        />
+                  </li>
+                  <li className='nav-item'>
+                    <Link
+                      href='#about'
+                      title='Sobre Mi'
+                      className='nav-link'
+                      data-animate='scrolling'
+                    >
+                    </Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Link
+                      href='#tecnologias'
+                      title='Tecnologias'
+                      className='nav-link'
+                      data-animate='scrolling'
+                    >
+                    </Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Link
+                      href='#proyectos'
+                      title='Proyectos'
+                      className='nav-link'
+                      data-animate='scrolling'
+                    >
+                    </Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Link
+                      href='#contacto'
+                      title='Contacto'
+                      className='nav-link'
+                      data-animate='scrolling'
+                    >
+                    </Link>
+                  </li>
+                </Anchor>
               </ul>
             </div>
           </div>

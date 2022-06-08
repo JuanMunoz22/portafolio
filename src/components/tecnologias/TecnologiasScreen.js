@@ -9,7 +9,8 @@ export const TecnologiasScreen = () => {
 
   return (
     <>
-      <div className='vg-page page-client'>
+      <div className='vg-page page-client' id='tecnologias'>
+        <br/>
         <h1 className='text-center fw-normal wow fadeIn'>Tecnologias que manejo</h1>
         <div className='container'>
           <div className='row'>

@@ -3,7 +3,8 @@ import React from 'react'
 export const ContactoScreen = () => {
   return (
     <>
-        <div className='vg-page page-contact' id='contact'>
+        <div className='vg-page page-contact' id='contacto'>
+            <br/><br/>
             <div className='container-fluid'>
                 <div className='text-center wow fadeInUp'>
                     <div className='badge badge-subhead'>Contacto</div>

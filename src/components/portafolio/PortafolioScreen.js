@@ -6,7 +6,8 @@ export const PortafolioScreen = () => {
   return (
 
     <>
-        <div className='vg-page page-portfolio' id="portfolio">
+        <div className='vg-page page-portfolio' id="proyectos">
+        <br/><br/>
             <div className='container'>
                 <div className='text-center wow fadeInUp'>
                     <div className='badge badge-subhead'>Proyectos</div>
