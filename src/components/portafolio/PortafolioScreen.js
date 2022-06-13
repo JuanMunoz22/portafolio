@@ -3,8 +3,10 @@ import React from 'react'
 export const PortafolioScreen = () => {
     const certificadorBlockchain = 'https://res.cloudinary.com/digitalhouse/image/upload/v1654645188/Portafolio/Works/Certificador-blockchain_woiplw.png';
 
+    const handleClick = () => {
+        window.open('https://certificador.herokuapp.com/')
+    }
   return (
-
     <>
         <div className='vg-page page-portfolio' id="proyectos">
         <br/><br/>
@@ -20,9 +22,19 @@ export const PortafolioScreen = () => {
                             <img src={certificadorBlockchain} alt=''/>
                             <div className='img-caption'>
                                 <h5 className='fg-theme'>Certificador Blockchain</h5>
-                                <p>Proyecto de titulo</p>
+                                <p>
+                                    Proyecto de título
+                                </p>
                             </div>
                         </div>
+                        <div className='description'>
+                            <br/>
+                            <p>
+                                Este proyecto consiste en proteger y verificar documentos a través de hash asociados a cada documento. 
+                                Para el desarrollo de este proyecto se creo una API REST en el backend utilizando nodeJs en conjunto con express, y para el desarrollo del frontend se trabajo con ReactJs.
+                            </p>
+                        </div>
+                        <button className='btn btnProyect' onClick={handleClick}>Ir al proyecto</button>
                     </div>
                 </div>
             </div>

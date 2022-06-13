@@ -5,7 +5,11 @@ import React from 'react'
 
 export const HomePage = () => {
 
-  const imgPerfil = 'https://res.cloudinary.com/digitalhouse/image/upload/v1652813486/ecdx8clhn6wjzl4yqi2e.jpg';
+  const imgPerfil = 'https://res.cloudinary.com/digitalhouse/image/upload/v1655134682/Portafolio/Foto_qyihio.png';
+
+  const downloadCurriculum = () => {
+    window.open('https://res.cloudinary.com/digitalhouse/image/upload/v1655157417/Portafolio/Curriculum_wlxuox.pdf');
+  }
 
   return (  
       <>
@@ -21,7 +25,7 @@ export const HomePage = () => {
               <h1 className='fw-light'>Juan Muñoz</h1>
               <h5 className='fg-theme mb-3'>Desarrollador Web</h5>
               <p className='text-muted'>
-                Estudiante de ingeniería en informática en
+                Titulado de ingeniería en informática en
                 constante crecimiento. Soy bastante autodidacta,
                 ya que siempre intento aprender nuevas
                 tecnologías y familiarizar diferentes áreas de un
@@ -35,7 +39,7 @@ export const HomePage = () => {
                 <li><b>Edad: </b> 28 Años</li>
                 <li><b>Telefono: </b> +56964633825</li>
               </ul>
-              <button className='btn btn-theme-outline'>Descargar Curriculum</button>
+              <button onClick={downloadCurriculum} className='btn btn-theme-outline'>Descargar Curriculum</button>
             </div>
           </div>
         </div>
@@ -48,8 +52,20 @@ export const HomePage = () => {
                 <li>
                   <div className='tittle'>2018 - 2022</div>
                   <div className='details'>
-                    <h5>Ingenieria de ejecución en informatica</h5>
+                    <h5>Ingeniería en informatica</h5>
                     <small className='fg-theme'>Universidad Santo Tómas</small>
+                    <p>Certificaciones obtenidas</p>
+                    <div className='certificaciones'>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Diseño de software y Base de datos</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Programación básica</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Programación Avanzada</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Administración de sistemas</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Arquitectura de software</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Redes y enrutamiento</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Gestión de proyectos informáticos</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Seguridad informática</p>
+                      <p><ion-icon name="document-text-outline"></ion-icon>Análisis de datos</p>
+                    </div>
                     <p>Iquique, Chile</p>
                   </div>
                 </li>

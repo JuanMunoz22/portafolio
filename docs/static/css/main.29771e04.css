@@ -1,2 +1,0 @@
-:root{--blue:#274859;--grey:#2d2c2d;--light-blue:#50d6b9;--red:#ef3724;--white:#fff;--black-transparent:rgb(0,0,0,.5);--grey-transparent:hsla(0,0%,100%,.3)}*{list-style:none}.page-home .navbar{position:fixed}#main-navbar ul li{float:left}#main-navbar ul li a{color:#fff;color:var(--white);text-decoration:none}#main-navbar ul li a:hover{color:#ef3724;color:var(--red)}@media (max-width:991px){.page-home .navbar{position:fixed!important}#main-navbar ul li{float:none;margin:0}}
-/*# sourceMappingURL=main.29771e04.css.map*/
